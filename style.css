@@ -7,9 +7,9 @@ body {
   background-color: black;
 }
 
-#playlist-container {
+.playlist-container {
   display: flex;
-  bottom: 0;
+  /* bottom: 0; */
   text-align: center;
   flex-direction: column;
 }
@@ -28,8 +28,8 @@ body {
 
 #player {
   border-radius: 1;
-  background: linear-gradient(to right, #3a2101 20%, #6d3f07 50%, #a2600c 100%);
-  width: 500px;
+  background: linear-gradient(to right, #3a2101 10%, #6d3f07 50%, #a2600c 100%);
+  width: 400px;
   margin: 20px auto;
   animation: glowing 8s ease-in-out infinite;
   position: fixed;
@@ -44,12 +44,15 @@ audio {
 }
 
 button {
-  background-color: #333;
-  color: #fff;
+  border: none;
+  border-radius: 1;
+  background: linear-gradient(to right, #3a2101 20%, #6d3f07 50%, #a2600c 100%);
+  animation: glowing 8s ease-in-out infinite;
+  color: rgb(172, 172, 172);
   border: none;
   font-size: 18px;
   cursor: pointer;
-  width: 198px;
+  width: 190px;
   margin: 5px auto;
 }
 
