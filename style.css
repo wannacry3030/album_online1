@@ -30,7 +30,7 @@ body {
   border-radius: 1;
   background: linear-gradient(to right, #3a2101 10%, #6d3f07 50%, #a2600c 100%);
   width: 400px;
-  margin: 20px auto;
+  margin: 0 auto;
   animation: glowing 8s ease-in-out infinite;
   position: fixed;
   bottom: 0;
@@ -54,6 +54,7 @@ button {
   cursor: pointer;
   width: 190px;
   margin: 5px auto;
+  z-index: 1;
 }
 
 button:hover {
