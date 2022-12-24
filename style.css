@@ -1,8 +1,10 @@
 /* style.css */
 body {
   background: url(cover.png);
-  background-position: center;
-  background-size: cover;
+  background-position: top;
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background-color: black;
 }
 
 #playlist-container {
@@ -12,10 +14,28 @@ body {
   flex-direction: column;
 }
 
+@keyframes glowing {
+  0% {
+    box-shadow: 0 0 5px 5px #6d3f07;
+  }
+  50% {
+    box-shadow: 0 0 0 0 #a2600c;
+  }
+  100% {
+    box-shadow: 0 0 5px 5px #a2600c;
+  }
+}
+
 #player {
-  width: 50%;
-  display: flex;
-  max-width: 400px;
+  border-radius: 1;
+  background: linear-gradient(to right, #3a2101 20%, #6d3f07 50%, #a2600c 100%);
+  width: 500px;
+  margin: 20px auto;
+  animation: glowing 8s ease-in-out infinite;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
   margin: 0 auto;
 }
 
